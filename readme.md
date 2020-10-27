@@ -416,3 +416,16 @@ http://127.0.0.1:3000/api/view-booking  [GET]
                     "message": "You are unauthorized to fetch the data",
                     "success": false
                 }
+
+
+9. http://127.0.0.1:3000/api/upload-file [POST]
+
+file limit = 3mb
+
+
+                response data:  
+
+                        {
+                            "message": "file uploaded successfully",
+                            "success": true
+                        }
