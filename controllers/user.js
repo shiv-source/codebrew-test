@@ -246,6 +246,24 @@ const viewBookings = async( req ,res ) => {
 
 }
 
+const uploadFile = async(req ,res) => {
+    
+   try {
+        return res.status(201).json({
+            message : "file uploaded successfully",
+            success : true
+        })
+
+   }
+   catch(err){
+       return res.status(500).json({
+           message : "unable to upload your file/ check your file size < 3 mb ",
+           success : false
+       })
+   }
+
+}
+
 module.exports = {
   userRegister,
   userLogin,
@@ -253,4 +271,5 @@ module.exports = {
   getLocations,
   userBooking,
   viewBookings,
+  uploadFile,
 };
